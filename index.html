@@ -14,7 +14,7 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,350" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -30,6 +30,14 @@
 
   <body id="page-top">
 
+  <script>
+  function copyText(e) {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  document.execCommand("copy");
+  alert(copyText + " was saved to the clipboard");
+  </script>
+}
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
         <div class="container-fluid">
@@ -63,7 +71,7 @@
 
 	<!-- About Section -->
     <section class="bg-primary text-white mb-0" id="about">
-      <div class="container">
+      <div class="container container-width">
         <h2 class="text-center text-white">Mark Phillips</h2>
         <hr class="mb-5">
         <div class="row col-lg-9 mx-auto">
@@ -78,10 +86,10 @@
 	  
   <!-- Portfolio Grid Section -->
     <section class="portfolio" id="portfolio">
-      <div class="container"style="min-width: 80%;">
+      <div class="container container-width">
         <h2 class="text-center text-secondary mb-0">Projects</h2>
         <hr class="mb-5">
-        <div class="row">
+        <div class="row" style = "margin-left: 2%; margin-right: 2%;">
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -89,26 +97,26 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-border" src="img/the-noodling.png" alt="">
+              <img class="img-border img-fluid" src="img/the-noodling.png" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-lg-5">
+          <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-	            <img class="playgif img-border" data-swap="img/the-noodling.gif" src="img/the-noodling.png">
+	            <img class="img-border img-fluid" data-swap="img/the-noodling.gif" src="img/the-noodling.png">
           </div>
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100" >
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white" >
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="img/portfolio/circus.png" alt="">
+              <img class="img-border img-fluid" src="img/the-noodling.png" alt="" >
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -149,42 +157,35 @@
 
   <!-- Contact Section -->
     <section class="bg-primary text-white mb-0" id="contact">
-      <div class="container">
+      <div class="container container-width">
         <h2 class="text-center text-uppercase text-white">Contact</h2>
         <hr class="mb-5">
-        <div class="row">
-          <div>
-            <p class="lead text-center" >Check out the links below or send me an email</p>
-          </div>
-        </div>
-        <div class="text-center mt-4"> </div>
+        <div class="text-center">
 		  <ul class="list-inline mb-0">
               <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-facebook"></i>
+                <a class="btn btn-outline-light btn-social text-center" style = "width: 70px; height: 70px;" href="#">
+                  <i class="fa fa-fw fa-envelope" style = "margin-top: 15%; margin-left: -10%;"></i>
+                </a>
+				<input type="text" value="Hello World" id="myInput">
+<button onclick="myFunction()">Copy text</button>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn btn-outline-light btn-social text-center" style = "width: 70px; height: 70px;" href="https://github.com/MarkPGames">
+                  <i class="fa fa-fw fa-github" style = "margin-top: 15%; margin-left: -10%;"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-google-plus"></i>
+                <a class="btn btn-outline-light btn-social text-center" style = "width: 70px; height: 70px;" href="https://twitter.com/MarkPGames">
+                  <i class="fa fa-fw fa-twitter" style = "margin-top: 15%; margin-left: -10%;"></i>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-linkedin"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a class="btn btn-outline-light btn-social text-center rounded-circle" href="#">
-                  <i class="fa fa-fw fa-dribbble"></i>
+                <a class="btn btn-outline-light btn-social text-center" style = "width: 70px; height: 70px;" href="#">
+                  <i class="fa fa-fw fa-linkedin" style = "margin-top: 15%; margin-left: -10%;"></i>
                 </a>
               </li>
         </ul>
+		</div>
       </div>
     </section>
 	  
@@ -355,5 +356,4 @@
     <script src="js/freelancer.min.js"></script>
 
   </body>
-
 </html>
