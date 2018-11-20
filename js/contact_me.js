@@ -73,3 +73,12 @@ $(function() {
 $('#name').focus(function() {
   $('#success').html('');
 });
+
+function copyText(e) {
+  var textToCopy = document.querySelector(e);
+  var textBox = document.querySelector(".clipboard");
+  textBox.setAttribute('value', textToCopy.innerHTML);
+
+  textBox.select();
+  document.execCommand('copy');
+});
