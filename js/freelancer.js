@@ -14,6 +14,14 @@
       }
     }
   });
+	
+var imageSwap = function () {
+    var $this = $(this);
+    var newSource = $this.data('swap');
+    $this.data('swap', $this.attr('src'));
+    $this.attr('src', newSource);
+};
+  $('img.playgif').hover(imageSwap, imageSwap);
 
   // Scroll to top button appear
   $(document).scroll(function() {
@@ -24,14 +32,6 @@
       $('.scroll-to-top').fadeOut();
     }
   });
-  
-  var imageSwap = function () {
-    var $this = $(this);
-    var newSource = $this.data('swap');
-    $this.data('swap', $this.attr('src'));
-    $this.attr('src', newSource);
-}
-  $('img.playgif').hover(imageSwap, imageSwap);
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {

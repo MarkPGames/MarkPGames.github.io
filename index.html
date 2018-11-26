@@ -84,12 +84,7 @@
         <div class="row" style = "margin-left: 2%; margin-right: 2%;">
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-border img-fluid" src="img/the-noodling.png" alt="">
+              <img class="playgif img-border img-fluid" data-swap="img/the-noodling.gif" src="img/the-noodling.png" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -99,7 +94,8 @@
                   <i class="fa fa-search-plus fa-3x"></i>
                 </div>
               </div>
-	            <img class="img-border img-fluid" data-swap="img/the-noodling.gif" src="img/the-noodling.png">
+	            <img class="img-border img-fluid" data-swap="img/the-noodling.gif" src="img/the-noodling.png" alt="">
+				</a>
           </div>
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
@@ -109,36 +105,6 @@
                 </div>
               </div>
               <img class="img-border img-fluid" src="img/the-noodling.png" alt="" >
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/game.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/safe.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/submarine.png" alt="">
             </a>
           </div>
         </div>
@@ -207,15 +173,52 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">The Noodling</h2>
+				<h3><pre>Unity C#</pre></h3>
               <hr class="mb-5">
               <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
+              <p class="mb-5">The Noodling is a local multiplayer arena based game with up to four players. This game was the result of my final project during my first year at AIE. The game centers around a "pool party" theme in which players must hit each other with pool noodles to push them off the coloured platforms. This was my first real experience with Unity and C# as well as working in a team of other programmers, artists and designers.</p>
+				<h3 class= "mb-4">My roles</h3>
+				<p class = "mb-2 text-secondary">
+				<strong> Buoyancy</strong>
+				</p>
+				<p class="mb-4">The main challenge which I was able to overcome was creating platforms that would look and feel like they are floating on water. Initially I attempted to re-create real buoyancy physics but soon found I was out of my league and so looked into various other ways I could achieve the same effect. The solution was utilizing Unity's rigidbody, physics forces and code that will keep the platforms level in relation to water. Working with rotation in C# for the first time was also a challenge, however overcoming this really helped me understand rotation when working on future projects.</p>
+				<p class = "mb-2 text-secondary">
+				<strong> Platform Behaviour</strong>
+				</p>
+				<p class="mb-4">One aspect of the gameplay is having platforms that do various things at certain points during a match. I wrote code that made platforms animate and sink in a clock wise direction at certain time intervals into a match. I also made it possible to have "slippery" platforms which would decrease the drag of any player standing on them. </p>
+				<p class = "mb-2 text-secondary">
+				<strong> Game Manager</strong>
+				</p>
+				<p class="mb-4">Game manager logic was still a new concept to me at the time in terms of being a persistent entity throughout all scenes. By the end of the project I had learned a lot just from this one aspect, including restarting/changing scenes, respawning, coroutines and setting up a working UI in Unity.</p>
+				<p class = "mb-2 text-secondary">
+				<strong> Game Juice</strong>
+				</p>
+				<p class="mb-4">When I first heard the game idea and theme I immedietely thought of the fun things we can do with a pool themed game, one being a beach ball. Towards the end of the project I was able to implement a beach ball that would be "thrown" in from off camera at random interval and would knock players backwards on contact. Although minor it made the game more unpredictable which players really enjoyed.</p>
+				<div class="row2">
+					<div class = "column2">
+				<p class = "mb-0 text-secondary">
+				<strong>Source</strong>
+				</p>
+				<a class="btn btn-outline-light2 btn-social text-center" style = "width: 70px; height: 70px;" href="https://github.com/BearWithMe2017/BearWithMe">
+                  <i class="fa fa-fw fa-github" style = "margin-top: 10%; margin-left: -10%;"></i>
+                </a>
+				</div>
+				<div class = "column2">
+				<p class = "mb-0 text-secondary">
+				<strong> Build</strong>
+				</p>
+				<a class="btn btn-outline-light2 btn-social text-center" style = "width: 70px; height: 70px;" href="https://github.com/BearWithMe2017/BearWithMe">
+                  <i class="fa fa-fw fa-file" style = "margin-top: 15%; margin-left: -5%;"></i>
+                </a>
+					</div>
+				</div>
+			  <p class = "mb-4 text-secondary">
+				  <h4>Close Project</h4>
+				<a class="btn btn-outline-light2 btn-social text-center portfolio-modal-dismiss" style = "width: 70px; height: 70px;" href="https://github.com/BearWithMe2017/BearWithMe">
+                  <i class="fa fa-fw fa-times" style = "margin-left: -5%;"></i>
+                </a>
+				  </p>
         </div>
       </div>
     </div>
@@ -343,7 +346,7 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+    <script src="js/freelancer.js"></script>
 
   </body>
 
