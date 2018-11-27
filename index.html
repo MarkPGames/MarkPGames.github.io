@@ -23,9 +23,9 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
-	
+	<link rel="prefetch" href="img/burythehatchet.gif">
 	<link rel="prefetch" href="img/the-noodling.gif">
-		<link rel="prefetch" href="img/worldloader-small.gif">
+	<link rel="prefetch" href="img/worldloader-small.gif">
 	<link rel="prefetch" href="img/worldloader-large.gif">
 	
   </head>
@@ -91,7 +91,7 @@
           </div>
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-	            <img class="playgif img-border img-fluid" data-swap="img/worldloader-small.gif" src="img/worldloader-small.png" alt="">
+	            <img class="playgif img-border img-fluid" data-swap="img/burythehatchet.gif" src="img/burythehatchet.png" alt="">
 				</a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -225,15 +225,53 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+             <h2 class="text-secondary text-uppercase mb-0">Bury The Hatchet</h2>
+				<h3><pre>Unity C#</pre></h3>
               <hr class="mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
+			  <p><iframe width="640" height="360" src="https://www.youtube.com/embed/N9tg0TuDPLc?mute=1&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </p>
+			  <p class="mb-5">Bury The Hatchet is a western top-down shooter and the result of my final project at AIE. Play as a sun-beaten gunslinger and traverse the Red Rock Canyons while picking off bandits with your trusty six-shooter.</p>
+				<h3 class= "mb-4">My roles</h3>
+				<p class = "mb-2 text-secondary">
+				<strong>Enemy AI</strong>
+				</p>
+				<p class="mb-4">My main focus during the course of the five months we worked on the game was the enemy AI. Having never implemented AI in a game sense it was a challenge from the start. The code design started as a simple switch statement with three functions Seek, Flee and Reload. However over time this was refactored more and more as the game evolved.
+				<p>After some research into State Machines and Behaviour Trees I was able to come to a solution which would involve a State Machine class that would be templated to work with any AI script that needed to use it. A parent class for AI was created as the initial game design included various types of enemies such as range and melee. One thing that I quickly realised was the amount of unexpected behaviour that would result over the course of testing the AI and so this took a large portion of my time.</p>
+				</p>
+				<p>The final Enemy AI included the following functionality:</p>
+				<p><strong>Cover</strong> - A Cover system was implemented in which any game object tagged as cover would be used when enemies are in range of that object. Enemies will find and walk behind cover to reload or strafe between cover while shooting the player.</p>
+				<p><strong>Peek</strong> - When enemies are behind cover they have a chance to either "peek" the player to get several shots off or run to another cover object while unloading their gun on the player.</p>
+				<p><strong>Reload</strong> - Enemies will find cover when they are out of bullets and once they're there, can safely reload their weapon.</p>
+				<p><strong>Seek</strong> - As enemies continually switch states their chance to "seek" increases, when this chance is high enough they will run towards the player while firing off all their bullets in an aggressive tactic to overwhelm them.</p>
+				<p><strong>Attack</strong> - Utilizing a weapon controller script created by another programmer in my team (<a href="https://mcorbencode.weebly.com/">Michael Corben</a>) enabled me to easily give any AI the ability to shoot as well as quickly change any values such as spray range or bullet speed.</p>
+				<p class = "mb-2 text-secondary" style = "padding-top: 2%;">
+				<strong>Game Juice</strong>
+				</p>
+				<p class="mb-4">At the very end of the project I felt the game world was lacking "life" so with the help of some Unity Assets I was able to create some basic AI for birds and snakes. Coupled with some sound effects and the game was already a lot more enjoyable.</p>
+				<div class="row2">
+					<div class = "column2">
+				<p class = "mb-0 text-secondary">
+				<strong>Source</strong>
+				</p>
+				<a class="btn btn-outline-light2 btn-social text-center" style = "width: 70px; height: 70px;" href="https://github.com/jakemakesgames/BuryTheHatchetEOY">
+                  <i class="fa fa-fw fa-github" style = "margin-top: 10%; margin-left: -10%;"></i>
+                </a>
+				</div>
+				<div class = "column2">
+				<p class = "mb-0 text-secondary">
+				<strong> Build</strong>
+				</p>
+				<a class="btn btn-outline-light2 btn-social text-center" style = "width: 70px; height: 70px;" href="https://drive.google.com/open?id=17dzkWxZxRTWzPMCY4zubYqiYhVMbWALf">
+                  <i class="fa fa-fw fa-file" style = "margin-top: 15%; margin-left: -5%;"></i>
+                </a>
+					</div>
+				</div>
+			  <p class = "mb-4 text-secondary">
+				  <h4>Close Project</h4>
+				<a class="btn btn-outline-light2 btn-social text-center portfolio-modal-dismiss" style = "width: 70px; height: 70px;" href="#">
+                  <i class="fa fa-fw fa-times" style = "margin-left: -5%;"></i>
+                </a>
+				  </p>
         </div>
       </div>
     </div>
@@ -247,15 +285,44 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Project Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">World Loader</h2>
+				<h3><pre>C++</pre></h3>
               <hr class="mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-              <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close Project</a>
-            </div>
-          </div>
+			  <img class="img-fluid mb-4" src="img/worldloader-large.gif" alt="">
+			  <p class="mb-5">This project was developed as part of the Complex Game Systems unit at AIE. World Loader is a demo application which utilizes the "Chunk Manager" header-only library that I created which loads and unloads "chunks" of tiles/textures.</p>
+				<h3 class= "mb-4">Features</h3>
+				<p class = "mb-2 text-secondary">
+				<strong>Templated Header Library</strong>
+				</p>
+				<p class="mb-4">This demo uses a templated header-only library called Chunk Manager which contains all chunk loading functionality. Chunk Manager uses a dictionary to hold each array of templated Chunks. I decided to use this container method as it uses keys to link data which made it easy to access a chunk as well as the associated tiles within that chunk.</p>
+				<p class = "mb-2 text-secondary">
+				<strong>World Loader Application</strong>
+				</p>
+				<p class="mb-4">This demo app is responsible for drawing and updating chunks using the Chunk Manager library. As I worked on the World Loader app I continually realised I needed to add more and more functionality to the Chunk Manager library to ensure I had all the data required to successfully draw and position tiles within each chunk.</p>
+				<div class="row2">
+					<div class = "column2">
+				<p class = "mb-0 text-secondary">
+				<strong>Source</strong>
+				</p>
+				<a class="btn btn-outline-light2 btn-social text-center" style = "width: 70px; height: 70px;" href="https://github.com/MarkPGames/WorldLoader">
+                  <i class="fa fa-fw fa-github" style = "margin-top: 10%; margin-left: -10%;"></i>
+                </a>
+				</div>
+				<div class = "column2">
+				<p class = "mb-0 text-secondary">
+				<strong> Build</strong>
+				</p>
+				<a class="btn btn-outline-light2 btn-social text-center" style = "width: 70px; height: 70px;" href="https://drive.google.com/open?id=1AR6J3rxZMfdZsZLxAajvv_uTwZs_OpDS">
+                  <i class="fa fa-fw fa-file" style = "margin-top: 15%; margin-left: -5%;"></i>
+                </a>
+					</div>
+				</div>
+			  <p class = "mb-4 text-secondary">
+				  <h4>Close Project</h4>
+				<a class="btn btn-outline-light2 btn-social text-center portfolio-modal-dismiss" style = "width: 70px; height: 70px;" href="#">
+                  <i class="fa fa-fw fa-times" style = "margin-left: -5%;"></i>
+                </a>
+				  </p>
         </div>
       </div>
     </div>
